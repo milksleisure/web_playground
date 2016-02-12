@@ -62,3 +62,10 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
+
+#award {
+    position: absolute;
+    top: 30px;
+    left: 365px;
+    z-index: 99;
+}
