@@ -16,3 +16,37 @@ h2 {
 blockquote {
     font-style: italic;
 }
+table {
+    margin: 0px 20px; 
+    border: thin solid black;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+td, th {
+    border: thin dotted grey;
+    padding 5px;
+}
+th {
+    background-color: #c60;
+}
+caption {
+    font-style: italic;
+    padding-top: 8px;
+}
+td.right {
+    text-align: right;
+}
+td.center {
+    text-align: center;
+}
+.cellcolor {
+    background-color: #fcba7a;
+}
+table table th {
+    background-color: white;
+}
+li {
+    list-style-image: url(images/backpack.gif);
+    padding-top: 5px;
+    margin-left: 20px;
+}
