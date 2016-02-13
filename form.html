@@ -4,13 +4,96 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <title>The Starbuzz Bean Machine</title>
+    <link rel="stylesheet" href="styledform.css" type="text/css"/>
   </head>
   <body>
 
     <h1>The Starbuzz Bean Machine</h1>
     <h2>Fill out the form below and click submit to order</h2>
 
-
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="get">
+        <table>
+            <tr>
+                <th>
+                    Choose your beans:
+                </th>
+                <td>
+                    <select name="beans">
+                        <option value="House Blend">House Blend</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Kenya">Kenya</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Type:
+                </th>
+                <td>
+                    <input type="radio" name="beantype" value="whole" />Whole bean<br />
+                    <input type="radio" name="beantype" value="ground" checked="checked" />Ground
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Extras:
+                </th>
+                <td>
+                    <input type="checkbox" name="extras[]" value="giftwrap" />Gift wrap<br />
+                    <input type="checkbox" name="extras[]" value="catalog" checked="checked" />Include catalog with order
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Ship to:
+                </th>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" name="name" /></td>
+                        </tr>
+                        <tr>
+                            <td>Phone:</td>
+                            <td><input type="text" name="phone" /></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td><input type="text" name="address" /></td>
+                        </tr>
+                        <tr>
+                            <td>City:</td>
+                            <td><input type="text" name="city" /></td>
+                        </tr>
+                        <tr>
+                            <td>State:</td>
+                            <td><input type="text" name="state" /></td>
+                        </tr>
+                        <tr>
+                            <td>Zip:</td>
+                            <td><input type="text" name="zip" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Customer Comments:
+                </th>
+                <td>
+                    <textarea name="comments" cols="48" rows="10">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" value="Order Now" />
+                </td>
+            </tr>
+        </table>
+    </form>
 
   </body>
 </html>
