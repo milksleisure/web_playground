@@ -47,6 +47,10 @@ def close_db(error):
     if hasattr(g, 'sqlite_db'):
         g.sqlite_db.close()
 
+@app.route('/bare')
+def bare():
+    return render_template('bare.html')
+
 @app.route('/')
 def show_entries():
     db = get_db()
