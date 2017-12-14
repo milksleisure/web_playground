@@ -51,6 +51,10 @@ def close_db(error):
 def bare():
     return render_template('bare.html')
 
+@app.route('/chart')
+def chart():
+    return render_template('chart.html')
+
 @app.route('/')
 def show_entries():
     db = get_db()
